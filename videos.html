@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="css/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="css/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Add Media helper (this is optional) -->
+<script type="text/javascript" src="css/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<script type="text/javascript">
+$('.fancybox-media')
+	.attr('rel', 'media-gallery')
+	.fancybox({
+		openEffect : 'none',
+		closeEffect : 'none',
+		prevEffect : 'none',
+		nextEffect : 'none',
+
+		arrows : false,
+		helpers : {
+			media : {},
+			buttons : {}
+		}
+	});
+</script>
+<!-- Page Content -->
+<div class="container">
+
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Videos</h1>
+        <ol class="breadcrumb">
+            <li><a href="index.php">Home</a>
+            </li>
+            <li class="active">Videos</li>
+        </ol>
+        
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-4 text-center">
+        <div class="thumbnail">
+        	<a class="fancybox-media" href="https://www.youtube.com/watch?v=mHkC-h8rirk"><h4>YOUNG CHEFS SEASON 1 PROMO</h4>
+        		<img class="img-responsive" src="https://i.ytimg.com/vi/mHkC-h8rirk/hqdefault.jpg"/>
+        	</a>
+        </div>
+    </div>
+    <div class="col-lg-4 text-center">
+        <div class="thumbnail">
+        	<a class="fancybox-media" href="https://www.youtube.com/watch?v=hnYMvJqIVU8"><h4>YOUNG CHEF TRAILER 2</h4>
+        		<img class="img-responsive" src="https://i.ytimg.com/vi/hnYMvJqIVU8/hqdefault.jpg"/>
+        	</a>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+
+

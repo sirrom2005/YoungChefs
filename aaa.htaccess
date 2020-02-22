@@ -1,0 +1,13 @@
+#ErrorDocument 404 /404.html
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+AddType text/x-component .htc
+
+RewriteEngine Off
+RewriteBase /youngchefs/
+
+
+RewriteRule ^meet-the-chefs.htm?$ meet-the-chefs.php [L]
+RewriteRule ^recipes.html$ recipes.php [L]
+RewriteRule ^([^/]*).htm$ profile.php?id=$1 [L]
+
+RewriteRule ^([^/]*).html?$ index.php?action=$1 [L]
